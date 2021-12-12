@@ -15,8 +15,8 @@ jobs:
       with:
         docs-folder: "docs/"
         build-command: |
-        sphinx-build -b html . _build/html
-        sphinx-build -D language=en -b html . _build/html/en
+          sphinx-build -b html . _build/html
+          sphinx-build -D language=en -b html . _build/html/en
         
     - name: Upload artifacts
       uses: actions/upload-artifact@v1
