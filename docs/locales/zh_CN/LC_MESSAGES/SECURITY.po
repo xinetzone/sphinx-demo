@@ -19,8 +19,8 @@ msgstr ""
 "Generated-By: Babel 2.9.1\n"
 
 #: ../../SECURITY.md:1
-msgid "Security Policy(raw)"
-msgstr "安全策略(raw)"
+msgid "Security Policy"
+msgstr "安全策略"
 
 #: ../../SECURITY.md:3
 msgid "Supported Versions"

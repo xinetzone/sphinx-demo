@@ -2,13 +2,13 @@
 
 Documentation for Healthy Communities.
 
+Please modify the files in the `about/` directory to match your project.
+
 ```{toctree}
 :maxdepth: 2
 :hidden:
 
-CODE_OF_CONDUCT
-CONTRIBUTING
-SECURITY
+about/index
 ```
 
 # Indices and tables
