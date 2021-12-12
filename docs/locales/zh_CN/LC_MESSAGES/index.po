@@ -1,0 +1,53 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, xinetzone
+# This file is distributed under the same license as the sphinx demo
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: sphinx demo \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-12 10:53+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../index.md:1
+msgid "Welcome to sphinx demo's documentation!"
+msgstr "欢迎阅读 sphinx demo 文档"
+
+#: ../../index.md:3
+msgid "Documentation for Healthy Communities."
+msgstr "健康社区的文档。"
+
+#: ../../index.md:14
+msgid "Indices and tables"
+msgstr "索引和表格"
+
+#: ../../index.md:16
+msgid "{ref}`genindex`"
+msgstr ""
+
+#: ../../index.md:17
+msgid "{ref}`modindex`"
+msgstr ""
+
+#: ../../index.md:18
+msgid "{ref}`search`"
+msgstr ""
+
+#~ msgid ":ref:`genindex`"
+#~ msgstr ""
+
+#~ msgid ":ref:`modindex`"
+#~ msgstr ""
+
+#~ msgid ":ref:`search`"
+#~ msgstr ""
+
