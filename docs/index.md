@@ -2,7 +2,8 @@
 
 Documentation for Healthy Communities.
 
-Please modify the files in the `about/` directory to match your project.
+```{include} ../README.md
+```
 
 ```{toctree}
 :maxdepth: 2
