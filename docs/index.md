@@ -1,6 +1,6 @@
-# Welcome to sphinx demo's documentation!
+# 欢迎阅读 sphinx demo 文档
 
-Documentation for Healthy Communities.
+健康社区的文档。
 
 ```{include} ../README.md
 ```
@@ -12,7 +12,7 @@ Documentation for Healthy Communities.
 about/index
 ```
 
-# Indices and tables
+# 索引与表格
 
 * {ref}`genindex`
 * {ref}`modindex`
