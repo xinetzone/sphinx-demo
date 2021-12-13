@@ -1,7 +1,3 @@
-# 欢迎阅读 sphinx demo 文档
-
-健康社区的文档。
-
 ```{include} ../README.md
 ```
 
