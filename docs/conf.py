@@ -276,3 +276,5 @@ post_date_format_short = '%b %d, %Y'
 nb_merge_streams = True
 execution_allow_errors = True
 jupyter_execute_notebooks = "cache"
+
+epub_show_urls = 'footnote'
