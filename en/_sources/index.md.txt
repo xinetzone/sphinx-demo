@@ -5,6 +5,7 @@
 :maxdepth: 2
 :hidden:
 
+start/index
 about/index
 ```
 

@@ -151,11 +151,33 @@ commentsRunWhenDOMLoaded(addUtterances);
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="about/index.html">
-   About
+  <a class="reference internal" href="start/index.html">
+   启动项目
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="start/anaconda3.html">
+     Anaconda3 安装与配置
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="start/cpp.html">
+     C/C++ 环境搭建
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="about/index.html">
+   About
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -263,7 +285,81 @@ commentsRunWhenDOMLoaded(addUtterances);
   <h1>
      All  Posts 
   </h1>
-    
+   
+
+  <div class="section">
+    <h2>
+      <a href="start/anaconda3.html"
+        >Anaconda3 安装与配置</a
+      >
+    </h2>
+
+    <ul class="ablog-archive">
+      <li>
+         <i class="fa fa-calendar"></i> Wed Nov  3 23:00:00 2021 
+      </li>
+       
+<li id="author">
+  <span
+    ><i class="fa-fw fa fa-user"></i></span
+  >
+   
+  <a href="posts/author/%E5%88%98%E6%96%B0%E4%BC%9F.html">刘新伟</a>  
+</li>
+  
+<li id="language">
+  <span
+    ><i class="fa-fw fa fa-language"></i></span
+  >
+   
+  <a href="posts/language/chinese.html">Chinese</a>  
+</li>
+ 
+<li id="category">
+  <span
+    ><i class="fa-fw fa fa-folder-open"></i></span
+  >
+   
+  <a href="posts/category/python.html">Python</a>  
+</li>
+ 
+<li id="tags">
+  <span
+    ><i
+      class="fa-fw fa fa-tag"
+    ></i
+    ></span
+  >
+   
+  <a href="posts/tag/basic.html">basic</a>  
+</li>
+ 
+    </ul>
+    <p>首先，观看视频：</p>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "xinetzone/sphinx-demo",
+            ref: "main",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+    <p><a href="start/anaconda3.html">Read more ...</a></p>
+    <hr />
+  </div>
+   
 </div>
 
               </div>
