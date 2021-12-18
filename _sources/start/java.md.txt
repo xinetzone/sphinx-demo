@@ -7,4 +7,5 @@
 
 - [Java Demo](https://xinetzone.github.io/java-demo/)
 - 知乎专栏 [Java 与计算机科学导论/跨学科方法](https://www.zhihu.com/column/c_1455559358604611584)
+- [Java Book](https://xinetzone.github.io/java-book/)
 ```

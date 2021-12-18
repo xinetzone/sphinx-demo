@@ -11,4 +11,5 @@
 
 - [动手学习 C++ 知乎专栏](https://www.zhihu.com/column/c_1453503941032534016)
 - [C++ Demo](https://xinetzone.github.io/cpp-demo/)
+- [C++ Book](https://xinetzone.github.io/cpp-book/)
 ```
