@@ -81,3 +81,6 @@ conda remove -n 环境名称 --all
     src="https://developer.hs.net/thread/1532?nav=course">
 </iframe>
 
+## 动手学习 Python
+
+使用 Python 创建的项目范本可以访问 [动手学习 Python](https://xinetzone.github.io/d2py/) 了解。
