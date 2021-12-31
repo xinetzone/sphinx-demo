@@ -89,7 +89,7 @@ commentsRunWhenDOMLoaded(addUtterances);
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="About" href="../about/index.html" />
-    <link rel="prev" title="Java 环境搭建" href="java.html" /> 
+    <link rel="prev" title="本地服务器 GPU 配置" href="gpu.html" /> 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en">
     
@@ -187,6 +187,11 @@ commentsRunWhenDOMLoaded(addUtterances);
    <li class="toctree-l2">
     <a class="reference internal" href="java.html">
      Java 环境搭建
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="gpu.html">
+     本地服务器 GPU 配置
     </a>
    </li>
    <li class="toctree-l2 current active">
@@ -342,7 +347,6 @@ commentsRunWhenDOMLoaded(addUtterances);
 <p class="admonition-title">See also</p>
 <p>更多精彩见：</p>
 <ul class="simple">
-<li><p><span class="guilabel">预览</span>：<a class="reference external" href="https://xinetzone.github.io/pytorch-demo">pytorch-demo</a></p></li>
 <li><p>知乎 <a class="reference external" href="https://www.zhihu.com/zvideo/1458194846603767808">win11 配置 Pytorch GPU</a></p></li>
 <li><p>简书 <a class="reference external" href="https://www.jianshu.com/p/1577b65fd5b4">搭建一个友好的可塑性计算机视觉工具集</a></p></li>
 </ul>
@@ -357,6 +361,13 @@ commentsRunWhenDOMLoaded(addUtterances);
 </pre></div>
 </div>
 </li>
+<li><p>添加 Jupyter 内核支持：</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>conda install ipykernel
+python -m ipykernel install --user --name torch --display-name <span class="s2">&quot;PyTorch&quot;</span>
+</pre></div>
+</div>
+</li>
+<li><p>更多内容见 <span class="guilabel">预览</span>：<a class="reference external" href="https://xinetzone.github.io/pytorch-demo">pytorch-demo</a>。</p></li>
 </ol>
 </div>
 </div>
@@ -389,11 +400,11 @@ commentsRunWhenDOMLoaded(addUtterances);
         
             <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="java.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="gpu.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Java 环境搭建</p>
+            <p class="prev-next-title">本地服务器 GPU 配置</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="../about/index.html" title="next page">

@@ -7,5 +7,6 @@ nocode
 anaconda3
 cpp
 java
+gpu
 pytorch
 ```
