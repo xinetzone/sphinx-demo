@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://xinetzone.github.io/sphinx-demo</id>
   <title>Blog</title>
-  <updated>2021-12-31T03:05:07.179340+00:00</updated>
+  <updated>2021-12-31T05:23:01.802783+00:00</updated>
   <link href="https://xinetzone.github.io/sphinx-demo"/>
   <link href="https://xinetzone.github.io/sphinx-demo/en/posts/atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.21">ABlog</generator>

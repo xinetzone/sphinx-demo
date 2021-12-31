@@ -7,4 +7,5 @@ nocode
 anaconda3
 cpp
 java
+pytorch
 ```
