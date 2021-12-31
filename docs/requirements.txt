@@ -3,10 +3,10 @@ myst-nb
 sphinx-thebe
 sphinx-copybutton
 sphinx-comments
-plotly
-pandas
-matplotlib
+# plotly
+# pandas
+# matplotlib
 sphinx-book-theme>=0.1.6
-Sphinx>=4.2
+Sphinx>=4.3
 # docutils==0.17
 sphinxcontrib-mermaid
