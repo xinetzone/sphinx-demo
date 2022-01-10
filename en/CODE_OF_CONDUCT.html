@@ -74,7 +74,7 @@ var addUtterances = () => {
 }
 commentsRunWhenDOMLoaded(addUtterances);
 </script>
-    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script>
@@ -85,6 +85,7 @@ commentsRunWhenDOMLoaded(addUtterances);
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
     <script>mermaid.initialize({startOnLoad:true});</script>
+    <link rel="canonical" href="https://xinetzone.github.io/sphinx-demo/CODE_OF_CONDUCT.html" />
     <link rel="shortcut icon" href="_static/page-logo.jfif"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -199,6 +200,11 @@ commentsRunWhenDOMLoaded(addUtterances);
      Pytorch 环境搭建
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="start/sitemap.html">
+     网站地图
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toctree-l1 current active has-children">
@@ -242,7 +248,7 @@ commentsRunWhenDOMLoaded(addUtterances);
   <div>
 版权所有 © 2021 <a href="https://xinetzone.github.io/">xinetzone</a></div>
 <div>由 <a href="https://ebp.jupyterbook.org/">EBP</a> 提供技术支持</div>
-<div>语言切换<a href="/sphinx-demo/">中</a>/<a href="/sphinx-demo/en">英</a></div>
+<button><a href="/">中</a></button> <button><a href="/en">英</a></button>
 
 </div>
 
@@ -283,7 +289,7 @@ commentsRunWhenDOMLoaded(addUtterances);
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
     </div>
 </div>
 
@@ -319,14 +325,24 @@ commentsRunWhenDOMLoaded(addUtterances);
         </div>
 
         <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
         </div>
     </div>
 </div>
     <div id="main-content" class="row">
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
-        
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Covenant Code of Conduct</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                    </div>
+                </div>
+            </div>
+            
               <div>
                  <div class="tex2jax_ignore mathjax_ignore section" id="covenant-code-of-conduct">
 <h1>Covenant Code of Conduct<a class="headerlink" href="#covenant-code-of-conduct" title="Permalink to this headline">¶</a></h1>
@@ -358,8 +374,8 @@ commentsRunWhenDOMLoaded(addUtterances);
 
               </div>
               
-        
-            <!-- Previous / next buttons -->
+            
+                <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
     <a class='left-prev' id="prev-link" href="about/index.html" title="previous page">
         <i class="fas fa-angle-left"></i>
@@ -376,19 +392,17 @@ commentsRunWhenDOMLoaded(addUtterances);
     <i class="fas fa-angle-right"></i>
     </a>
 </div>
-        
+            
         </div>
     </div>
     <footer class="footer">
-    <div class="container">
-      <p>
-        
-          By xinetzone<br/>
-        
-            &copy; Copyright 2021, xinetzone.<br/>
-      </p>
-    </div>
-  </footer>
+  <p>
+    
+      By xinetzone<br/>
+    
+        &copy; Copyright 2021, xinetzone.<br/>
+  </p>
+</footer>
 </main>
 
 
