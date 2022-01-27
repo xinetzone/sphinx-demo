@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono|Annie Use Your Telescope');
+
 a {
     color: #027bab;
 }
@@ -55,14 +57,14 @@ th.field-name {
 
 tt,
 code {
-    color: #f1f152;
+    color: #F8F8F2;
     background: #015259;
     border-radius: 0.3em;
     padding: 0.0em 0.3em;
 }
 
 a.reference.internal code.xref span.pre {
-    color: #f6f65a;
+    color: #F8F8F2;
     background: #015259;
     border-bottom: none;
     border-radius: 0;
@@ -79,7 +81,7 @@ a.reference.internal:hover code {
 }
 
 a.reference.internal:hover code.xref span.pre {
-    color: #c7c751;
+    color: #F8F8F2;
     background: #027bab;
     border-bottom: none;
 }
@@ -92,13 +94,13 @@ a tt {
 }
 
 code.literal {
-    color: #f0f0a6;
+    color: #F8F8F2;
     background: #015259;
 }
 
 pre {
-    padding: 7px 14px;
-    background: #f1f5f1;
+    padding: 20px 30px;
+    background: #003038;
 }
 
 div>dl {
