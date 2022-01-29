@@ -1,11 +1,11 @@
 
 <!DOCTYPE html>
 
-<html lang="zh_CN">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>简介 &#8212; sphinx-demo 0.1 文档</title>
+    <title>Pytorch 环境搭建 &#8212; sphinx-demo 0.1 documentation</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -74,7 +74,6 @@ var addUtterances = () => {
 }
 commentsRunWhenDOMLoaded(addUtterances);
 </script>
-    <script src="../_static/translations.js"></script>
     <script src="../_static/sphinx-book-theme.9d8b4a8b9bb19db25eeaddc40d639ba2.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
@@ -86,13 +85,14 @@ commentsRunWhenDOMLoaded(addUtterances);
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
     <script>mermaid.initialize({startOnLoad:true});</script>
+    <link rel="canonical" href="https://xinetzone.github.io/sphinx-demo/start/pytorch.html" />
     <link rel="shortcut icon" href="../_static/page-logo.jfif"/>
-    <link rel="index" title="索引" href="../genindex.html" />
-    <link rel="search" title="搜索" href="../search.html" />
-    <link rel="next" title="关于" href="../about/index.html" />
-    <link rel="prev" title="启动项目" href="index.html" /> 
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="网站地图" href="sitemap.html" />
+    <link rel="prev" title="本地服务器 GPU 配置" href="gpu.html" /> 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="zh_CN">
+    <meta name="docsearch:language" content="en">
     
 
     <!-- Google Analytics -->
@@ -156,12 +156,12 @@ commentsRunWhenDOMLoaded(addUtterances);
       <img src="../_static/logo.jpg" class="logo" alt="logo">
       
       
-      <h1 class="site-logo" id="site-title">sphinx-demo 0.1 文档</h1>
+      <h1 class="site-logo" id="site-title">sphinx-demo 0.1 documentation</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="搜索文档..." aria-label="搜索文档..." autocomplete="off" >
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <ul class="current nav bd-sidenav">
@@ -175,16 +175,46 @@ commentsRunWhenDOMLoaded(addUtterances);
    </i>
   </label>
   <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="nocode.html">
+     零代码写文档
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="anaconda3.html">
+     Anaconda3 安装与配置
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="cpp.html">
+     C/C++ 环境搭建
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="java.html">
+     Java 环境搭建
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="gpu.html">
+     本地服务器 GPU 配置
+    </a>
+   </li>
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
-     简介
+     Pytorch 环境搭建
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="sitemap.html">
+     网站地图
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../about/index.html">
-   关于
+   About
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
   <label for="toctree-checkbox-2">
@@ -194,17 +224,17 @@ commentsRunWhenDOMLoaded(addUtterances);
   <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../CODE_OF_CONDUCT.html">
-     行为准则
+     Covenant Code of Conduct
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../CONTRIBUTING.html">
-     贡献
+     Contributing
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../SECURITY.html">
-     安全策略
+     Security Policy
     </a>
    </li>
    <li class="toctree-l2">
@@ -223,7 +253,7 @@ commentsRunWhenDOMLoaded(addUtterances);
   <div>
 版权所有 © 2021 <a href="https://xinetzone.github.io/">xinetzone</a></div>
 <div>由 <a href="https://ebp.jupyterbook.org/">EBP</a> 提供技术支持</div>
-<div>语言切换<a href="/sphinx-demo/">中</a>/<a href="/sphinx-demo/en">英</a></div>
+<button><a href="/sphinx-demo">中</a></button> <button><a href="/sphinx-demo/en">英</a></button>
 
 </div>
 
@@ -245,25 +275,25 @@ commentsRunWhenDOMLoaded(addUtterances);
             <div class="topbar-left">
                 
                 <label class="nav-toggle-button" for="__navigation">
-                    <div class="visually-hidden">切换导航</div>
+                    <div class="visually-hidden">Toggle navigation</div>
                     <i class="fas fa-bars"></i>
                 </label>
                 
             </div>
             
 <div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="下载此页面"><i
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
             class="fas fa-download"></i></button>
 
     <div class="dropdown-buttons">
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/start/intro.md.txt"><button type="button"
-                class="btn btn-secondary topbarbtn" title="下载源文件" data-toggle="tooltip"
+        <a class="dropdown-buttons" href="../_sources/start/pytorch.md.txt"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="列印成PDF"
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
                 onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
     </div>
 </div>
@@ -276,23 +306,23 @@ commentsRunWhenDOMLoaded(addUtterances);
     <div class="dropdown-buttons sourcebuttons">
         <a class="repository-button"
             href="https://github.com/xinetzone/sphinx-demo"><button type="button" class="btn btn-secondary topbarbtn"
-                data-toggle="tooltip" data-placement="left" title="源库"><i
-                    class="fab fa-github"></i>资料库</button></a>
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/xinetzone/sphinx-demo/issues/new?title=Issue%20on%20page%20%2Fstart/intro.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/xinetzone/sphinx-demo/issues/new?title=Issue%20on%20page%20%2Fstart/pytorch.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
-                title="打开一个问题"><i class="fas fa-lightbulb"></i>公开的问题</button></a>
-        <a class="edit-button" href="https://github.com/xinetzone/sphinx-demo/edit/main/docs/start/intro.md"><button
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/xinetzone/sphinx-demo/edit/main/docs/start/pytorch.md"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
-                title="编辑这个页面"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
     </div>
 </div>
 
             <!-- Full screen (wrap in <a> to have style consistency -->
 
 <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="全屏模式"
-        title="全屏模式"><i
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
             class="fas fa-expand"></i></button></a>
 
             <!-- Launch buttons -->
@@ -302,6 +332,19 @@ commentsRunWhenDOMLoaded(addUtterances);
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> 导航
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#gpu">
+   本地服务器支持 GPU
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -309,19 +352,58 @@ commentsRunWhenDOMLoaded(addUtterances);
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>简介</h1>
+                <h1>Pytorch 环境搭建</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> 导航 </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#gpu">
+   本地服务器支持 GPU
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
             
               <div>
-                 <div class="tex2jax_ignore mathjax_ignore section" id="id1">
-<h1>简介<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
-<p>关于内核配置的详细说明见：<a class="reference external" href="https://xinetzone.github.io/sphinx-demo/start/index.html">项目启动</a>。</p>
+                 <div class="tex2jax_ignore mathjax_ignore section" id="pytorch">
+<h1>Pytorch 环境搭建<a class="headerlink" href="#pytorch" title="Permalink to this headline">¶</a></h1>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>更多精彩见：</p>
+<ul class="simple">
+<li><p>知乎 <a class="reference external" href="https://www.zhihu.com/zvideo/1458194846603767808">win11 配置 Pytorch GPU</a></p></li>
+<li><p>简书 <a class="reference external" href="https://www.jianshu.com/p/1577b65fd5b4">搭建一个友好的可塑性计算机视觉工具集</a></p></li>
+</ul>
+</div>
+<p><span class="guilabel">环境配置</span>：学习 <a class="reference internal" href="anaconda3.html"><span class="doc std std-doc">Anaconda3 教程</span></a>，然后配置 PyTorch。</p>
+<div class="section" id="gpu">
+<h2>本地服务器支持 GPU<a class="headerlink" href="#gpu" title="Permalink to this headline">¶</a></h2>
+<ol>
+<li><p>替换 <a class="reference internal" href="gpu.html"><span class="doc std std-doc">本地服务器 GPU 配置</span></a> 中的环境 <code class="docutils literal notranslate"><span class="pre">ai</span></code> 为 <code class="docutils literal notranslate"><span class="pre">torch</span></code>。</p></li>
+<li><p>安装 PyTorch GPU 支持：</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>conda install pytorch torchvision torchaudio -c pytorch
+</pre></div>
+</div>
+</li>
+<li><p>添加 Jupyter 内核支持：</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>conda install ipykernel
+python -m ipykernel install --user --name torch --display-name <span class="s2">&quot;PyTorch&quot;</span>
+</pre></div>
+</div>
+</li>
+<li><p>更多内容见 <span class="guilabel">预览</span>：<a class="reference external" href="https://xinetzone.github.io/pytorch-demo">pytorch-demo</a>。</p></li>
+</ol>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -352,17 +434,17 @@ commentsRunWhenDOMLoaded(addUtterances);
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="index.html" title="上一页 页">
+    <a class='left-prev' id="prev-link" href="gpu.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
-            <p class="prev-next-subtitle">上一页</p>
-            <p class="prev-next-title">启动项目</p>
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">本地服务器 GPU 配置</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="../about/index.html" title="下一页 页">
+    <a class='right-next' id="next-link" href="sitemap.html" title="next page">
     <div class="prev-next-info">
-        <p class="prev-next-subtitle">下一页</p>
-        <p class="prev-next-title">关于</p>
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">网站地图</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
@@ -373,9 +455,9 @@ commentsRunWhenDOMLoaded(addUtterances);
     <footer class="footer">
   <p>
     
-      通过 xinetzone<br/>
+      By xinetzone<br/>
     
-        &copy; 版权 2021, xinetzone.<br/>
+        &copy; Copyright 2021, xinetzone.<br/>
   </p>
 </footer>
 </main>
