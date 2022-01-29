@@ -1,6 +1,6 @@
 # 网站地图
 
-Sphinx 扩展 {github}`jdillard/sphinx-sitemap` 为你的 Sphinx 文档的 HTML 版本生成多版本和多语言 [sitemaps.org](https://www.sitemaps.org/protocol.html) 兼容的网站地图。
+Sphinx 扩展 [jdillard/sphinx-sitemap](https://github.com/jdillard/sphinx-sitemap) 为你的 Sphinx 文档的 HTML 版本生成多版本和多语言 [sitemaps.org](https://www.sitemaps.org/protocol.html) 兼容的网站地图。
 
 ## 配置
 
