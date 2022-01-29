@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [doc]
+    branches: [main]
 
 jobs:
   deploy-to-pages:
@@ -42,7 +42,7 @@ jobs:
         shell: bash
         run: |
           pip install --upgrade pip
-          pip install -r docs/requirements.txt
+          pip install .[doc]
 
       - name: 🔧 Build HTML
         run: |
