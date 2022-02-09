@@ -103,7 +103,6 @@ extlinks = {
     # 'dudir': ('https://docutils.sourceforge.io/docs/ref/rst/'
     #           'directives.html#%s', ''),
     'py-doc': ('https://daobook.github.io/cpython/%s', ''),
-    'github': ('https://github.com/%s', ''),
     'daobook': ('https://daobook.github.io/%s', ''),
     'ablog': ('https://daobook.github.io/ablog/zh-CN/%s', '')
 }
