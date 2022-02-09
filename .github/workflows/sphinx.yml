@@ -43,12 +43,12 @@ jobs:
         run: |
           pip install --upgrade pip
           pip install .[doc]
+          pip install invoke
 
       - name: 🔧 Build HTML
         run: |
-          cd docs
-          make html
-          sphinx-build -D language=en -b html ./ _build/html/en
+          invoke docs
+          invoke docs.language
 
       # remove the .doctrees folder when building for deployment as it takes two thirds of disk space
       - name: 🔥 Clean up files

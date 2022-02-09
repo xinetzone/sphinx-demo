@@ -26,8 +26,7 @@ def _browse(c):
     """
     Open build target's index.html in a browser (using 'open').
     """
-    index = join(c.sphinx.target, c.sphinx.target_file)
-    c.run("open {0}".format(index))
+    c.run(f"python -m http.server --directory {c.sphinx.target}")
 
 
 @task(
@@ -70,6 +69,20 @@ def build(
 
 
 @task
+def gettext(c):
+    opts = "-b gettext"
+    target = c.sphinx.target + '/gettext'
+    build(c, target=target, opts=opts)
+
+
+@task(name='language')
+def _language(c, language='en'):
+    opts = f"-D language={language}"
+    target = c.sphinx.target + f'/{language}'
+    build(c, target=target, opts=opts)
+
+
+@task
 def doctest(c):
     """
     Run Sphinx' doctest builder.
@@ -99,18 +112,15 @@ def tree(c):
 
 
 # Vanilla/default/parameterized collection for normal use
-ns = Collection(_clean, _browse, build, tree, doctest)
-ns.configure(
-    {
-        "sphinx": {
-            "source": "docs",
-            # TODO: allow lazy eval so one attr can refer to another?
-            "target": join("docs", "_build/html"),
-            "target_file": "index.html",
-        }
+ns = Collection(_clean, _browse, build, gettext, _language, tree, doctest)
+ns.configure({
+    "sphinx": {
+        "source": "docs",
+        # TODO: allow lazy eval so one attr can refer to another?
+        "target": join("docs", "_build/html"),
+        "target_file": "index.html",
     }
-)
-
+})
 
 # Multi-site variants, used by various projects (fabric, invoke, paramiko)
 # Expects a tree like sites/www/<sphinx> + sites/docs/<sphinx>,
@@ -124,7 +134,12 @@ def _site(name, help_part):
     coll = Collection.from_module(
         self,
         name=name,
-        config={"sphinx": {"source": _path, "target": join(_path, "_build/html")}},
+        config={
+            "sphinx": {
+                "source": _path,
+                "target": join(_path, "_build/html")
+            }
+        },
     )
     coll.__doc__ = "Tasks for building {}".format(help_part)
     coll["build"].__doc__ = "Build {}".format(help_part)
