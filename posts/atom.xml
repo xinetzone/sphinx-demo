@@ -2,8 +2,43 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh_CN">
   <id>https://xinetzone.github.io/sphinx-demo</id>
   <title>Blog</title>
-  <updated>2022-02-09T05:53:59.661047+00:00</updated>
+  <updated>2022-02-09T05:57:35.574603+00:00</updated>
   <link href="https://xinetzone.github.io/sphinx-demo"/>
   <link href="https://xinetzone.github.io/sphinx-demo/zh_CN/posts/atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.23">ABlog</generator>
+  <entry>
+    <id>https://xinetzone.github.io/sphinx-demo/zh_CN/start/anaconda3.html</id>
+    <title>Anaconda3 安装与配置</title>
+    <updated>2021-11-03T23:00:00+00:00</updated>
+    <author>
+      <name>刘新伟</name>
+    </author>
+    <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
+&lt;p&gt;首先，观看视频：&lt;/p&gt;
+&lt;/div&gt;
+
+    &lt;script type="text/x-thebe-config"&gt;
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "xinetzone/sphinx-demo",
+            ref: "main",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    &lt;/script&gt;
+    &lt;script&gt;kernelName = 'python3'&lt;/script&gt;</content>
+    <link href="https://xinetzone.github.io/sphinx-demo/zh_CN/start/anaconda3.html" rel="alternate"/>
+    <summary>首先，观看视频：</summary>
+    <category term="basic" label="basic"/>
+    <published>2021-11-03T23:00:00+00:00</published>
+  </entry>
 </feed>
