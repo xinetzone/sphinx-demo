@@ -1,13 +1,10 @@
-from invoke import Collection #, task, run
+from invoke import Collection, task
 from _docs import docs
 
 
-# @task
-# def build(ctx):
-#     # run('conda activate py38')
-#     run('tvmc -h')
+@task
+def init(ctx):
+    ctx.run('pip install .[doc]')
 
 
-ns = Collection(
-    docs
-)
+ns = Collection(docs, init)

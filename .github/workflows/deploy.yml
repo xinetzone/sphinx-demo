@@ -42,16 +42,16 @@ jobs:
         shell: bash
         run: |
           pip install --upgrade pip
-          pip install .[doc]
           pip install invoke
+          invoke init
 
       - name: 🔧 Build HTML
         run: |
           invoke docs
-          invoke docs.language
+          invoke docs -l en
 
       - name: 🚀 Deploy to GitHub pages
         uses: peaceiris/actions-gh-pages@v3.6.1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: docs/_build/html
+          publish_dir: _build/html
