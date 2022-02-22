@@ -47,8 +47,8 @@ jobs:
 
       - name: 🔧 Build HTML
         run: |
-          invoke docs
-          invoke docs -l en
+          invoke sites
+          invoke sites -l en
 
       - name: 🚀 Deploy to GitHub pages
         uses: peaceiris/actions-gh-pages@v3.6.1
