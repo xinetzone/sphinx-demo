@@ -25,6 +25,24 @@ doc = [
   "sphinx>=4.4",
   "sphinxcontrib-mermaid",
 ]
+dev = [
+  "ablog",
+  "myst-nb",
+  "sphinx-thebe",
+  "sphinx-copybutton",
+  "sphinx-comments",
+  "plotly",
+  "pandas",
+  "matplotlib",
+  "sphinx-book-theme",
+  "sphinx>=4.4",
+  "sphinxcontrib-mermaid",
+  "sphinx-panels",
+  "sphinx-inline-tabs",
+  "sphinx-automodapi",
+  "witchhazel",
+  "sphinx-sitemap"
+]
 
 [tool.flit.sdist]
 # include = ["docs/"]
