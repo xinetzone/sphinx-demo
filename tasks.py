@@ -4,7 +4,7 @@ from _docs import docs
 
 @task
 def init(ctx):
-    ctx.run('pip install .[doc] --use-feature=in-tree-build')
+    ctx.run('pip install .[dev] --use-feature=in-tree-build')
 
 
 ns = Collection(docs, init)
