@@ -50,14 +50,18 @@ def update(c, language='en'):
     Only used with `invoke intl.update`
     '''
     opts = "-b gettext"
-    target = Path(c.sphinx.target).parent / '_build/gettext'
+    target = Path(c.sphinx.target).parent / 'gettext'
     if language == 'en':
         _clean(c)
         build(c, target=target, opts=opts)
     else:
         if not Path(target).exists():
             build(c, target=target, opts=opts)
-        c.run(f'sphinx-intl update -p {target} -l {language}')
+        c.run(
+            f'sphinx-intl update -p {target} -l {language}'
+        )
+        # for DIR in ['pages', 'posts', 'shop']:
+        #     rmtree(f'locales/{language}/LC_MESSAGES/{DIR}/')
 
 
 def _site(name, help_part):
@@ -67,7 +71,7 @@ def _site(name, help_part):
         name=name,
         config={"sphinx": {
             "source": name,
-            "target": "_build/html"
+            "target": "output/html"
         }},
     )
     coll.__doc__ = f"Tasks for building {help_part}"
@@ -77,6 +81,5 @@ def _site(name, help_part):
 
 # Usage doc/API site (published as e.g. docs.myproject.org)
 docs = _site("docs", "the main site.")
-# intl = _site("intl", "the main site.")
 
 ns = Collection(docs)
