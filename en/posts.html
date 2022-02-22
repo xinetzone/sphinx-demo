@@ -87,6 +87,7 @@ const thebe_selector_output = ".cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
     <script>mermaid.initialize({startOnLoad:true});</script>
+    <link rel="canonical" href="https://xinetzone.github.io/sphinx-demo/posts.html" />
     <link rel="shortcut icon" href="_static/page-logo.jfif"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" /> 
@@ -175,8 +176,38 @@ const thebe_selector_output = ".cell_output"
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="start/intro.html">
-     简介
+    <a class="reference internal" href="start/nocode.html">
+     零代码写文档
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="start/anaconda3.html">
+     Anaconda3 安装与配置
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="start/cpp.html">
+     C/C++ 环境搭建
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="start/java.html">
+     Java 环境搭建
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="start/gpu.html">
+     本地服务器 GPU 配置
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="start/pytorch.html">
+     Pytorch 环境搭建
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="start/sitemap.html">
+     网站地图
     </a>
    </li>
   </ul>
@@ -225,8 +256,8 @@ const thebe_selector_output = ".cell_output"
 <intl>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <nav class="w3-dropdown-hover">
-        <button class="w3-button">intl</button>
-        <ul class="w3-dropdown-content w3-bar-block w3-card-4">
+        <button class="w3-button w3-border-0">intl</button>
+        <ul class="w3-dropdown-content">
             <li>
                 <a href="/sphinx-demo/">Home</a>
             </li>
@@ -318,7 +349,83 @@ const thebe_selector_output = ".cell_output"
   <h1>
      All  Posts 
   </h1>
-    
+   
+
+  <div class="section ablog-post">
+    <h2 class="ablog-post-title">
+      <a href="start/anaconda3.html"
+        >Anaconda3 安装与配置</a
+      >
+    </h2>
+
+    <ul class="ablog-archive">
+      <li>
+         <i class="fa fa-calendar"></i> Wed Nov  3 23:00:00 2021 
+      </li>
+       
+<li id="author">
+  <span
+    ><i class="fa-fw fa fa-user"></i></span
+  >
+   
+  <a href="posts/author/%E5%88%98%E6%96%B0%E4%BC%9F.html">刘新伟</a>  
+</li>
+  
+<li id="language">
+  <span
+    ><i class="fa-fw fa fa-language"></i></span
+  >
+   
+  <a href="posts/language/chinese.html">Chinese</a>  
+</li>
+ 
+<li id="category">
+  <span
+    ><i class="fa-fw fa fa-folder-open"></i></span
+  >
+   
+  <a href="posts/category/python.html">Python</a>  
+</li>
+ 
+<li id="tags">
+  <span
+    ><i
+      class="fa-fw fa fa-tag"
+    ></i
+    ></span
+  >
+   
+  <a href="posts/tag/basic.html">basic</a>  
+</li>
+ 
+    </ul>
+    <div class="ablog-post-excerpt docutils container">
+<p>首先，观看视频：</p>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "xinetzone/sphinx-demo",
+            ref: "main",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+    <p class="ablog-post-expand"><a href="start/anaconda3.html"><em>Read more ...</em></a></p>
+    <hr />
+  </div>
+   
 </div>
 
               </div>

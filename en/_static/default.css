@@ -5,3 +5,7 @@ blockquote.epigraph {
 .dfn {
     background-color: rgb(205, 214, 71);
 }
+
+intl li {
+    list-style-type: none;
+}
