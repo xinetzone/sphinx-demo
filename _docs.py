@@ -81,5 +81,6 @@ def _site(name, help_part):
 
 # Usage doc/API site (published as e.g. docs.myproject.org)
 docs = _site("docs", "the main site.")
+sites = _site("sites", "the main site.")
 
-ns = Collection(docs)
+ns = Collection(sites)
