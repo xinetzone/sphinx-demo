@@ -142,9 +142,6 @@ html_theme = 'sphinx_book_theme'
 html_static_path = [f'{ROOT}/_static']
 html_css_files = ["default.css"]
 
-# -- 国际化输出 ----------------------------------------------------------------
-gettext_compact = False  # optional.
-
 # -- 主题设置 -------------------------------------------------------------------
 
 # 定制主侧栏
@@ -152,7 +149,7 @@ html_sidebars = {
     "*": [
         # 显示标志和网站标题。
         "sidebar-logo.html",
-        #一个基于 bootstrap 的搜索栏（来自 PyData Sphinx Theme）
+        # 一个基于 bootstrap 的搜索栏（来自 PyData Sphinx Theme）
         "search-field.html",
         # 一个用于你的书基于 bootstrap 的导航菜单。
         "sbt-sidebar-nav.html",

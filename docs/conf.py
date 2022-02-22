@@ -11,4 +11,6 @@ from shared_conf import *
 sitemap_locales = [None]
 sitemap_url_scheme = "{link}"
 
-locale_dirs = ['locales/'] 
+# -- 国际化输出 ----------------------------------------------------------------
+gettext_compact = False  # optional.
+locale_dirs = ['./locales/']

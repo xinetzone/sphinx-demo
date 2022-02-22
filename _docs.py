@@ -50,7 +50,7 @@ def update(c, language='en'):
     Only used with `invoke intl.update`
     '''
     opts = "-b gettext"
-    target = Path(c.sphinx.target).parent / 'gettext'
+    target = Path(c.sphinx.target) / 'gettext'
     if language == 'en':
         _clean(c)
         build(c, target=target, opts=opts)
