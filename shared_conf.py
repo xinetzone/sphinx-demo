@@ -280,3 +280,5 @@ html_context = {
     'test_versions': ['latest', 'translation'],
     'locale_versions': ['zh_CN'],
 }
+
+locale_dirs = [f'{ROOT}/locales/']
