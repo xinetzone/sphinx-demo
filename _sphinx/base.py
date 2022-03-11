@@ -1,14 +1,5 @@
-# Configuration file for the Sphinx documentation builder.
-#
-# This file only contains a selection of the most common options. For a full
-# list see the documentation:
-# https://www.sphinx-doc.org/en/master/usage/configuration.html
-
-# -- Path setup --------------------------------------------------------------
-
-# If extensions (or modules to document with autodoc) are in another directory,
-# add these directories to sys.path here. If the directory is relative to the
-# documentation root, use os.path.abspath to make it absolute, like shown here.
+'''基础配置
+'''
 
 from pathlib import Path
 import sys
@@ -18,15 +9,6 @@ if sys.platform == 'win32':
     import asyncio
     asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
 
-ROOT = Path(__file__).parent.absolute().as_posix()  # The root directory
-# For autodoc to work
-sys.path.append(ROOT)
-
-# -- General configuration ---------------------------------------------------
-
-# Add any Sphinx extension module names here, as strings. They can be
-# extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
-# ones.
 extensions = [
     "ablog",
     "myst_nb",
@@ -36,7 +18,6 @@ extensions = [
     "sphinx_copybutton",
     "sphinx_comments",
     "sphinxcontrib.mermaid",
-    "sphinxcontrib.bibtex",
     'sphinx.ext.autosummary',
     'sphinx.ext.todo',
     'sphinx.ext.coverage',
@@ -85,6 +66,7 @@ nb_render_priority = {
     'gettext': ()
 }
 
+ROOT = Path(__file__).parent.absolute().as_posix()
 # Add any paths that contain templates here, relative to this directory.
 templates_path = [f'{ROOT}/_templates', ablog.get_html_templates_path()]
 

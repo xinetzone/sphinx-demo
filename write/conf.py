@@ -9,6 +9,3 @@ sys.path.extend([
 ])
 
 from share_conf import *
-
-extensions.extend(["sphinxcontrib.bibtex"])
-bibtex_bibfiles = ["references.bib"]

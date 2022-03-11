@@ -66,12 +66,16 @@ def update(c, language='en'):
 
 def _site(name, help_part):
     self = sys.modules[__name__]
+    if name == 'docs':
+        out = ''
+    else:
+        out = name
     coll = Collection.from_module(
         self,
         name=name,
         config={"sphinx": {
             "source": name,
-            "target": "output/html"
+            "target": f"output/html/{out}"
         }},
     )
     coll.__doc__ = f"Tasks for building {help_part}"
@@ -81,6 +85,6 @@ def _site(name, help_part):
 
 # Usage doc/API site (published as e.g. docs.myproject.org)
 docs = _site("docs", "the main site.")
-sites = _site("sites", "the main site.")
+write = _site("write", "the main site.")
 
-ns = Collection(sites)
+# ns = Collection(docs, write)

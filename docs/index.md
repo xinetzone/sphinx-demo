@@ -6,7 +6,6 @@
 :hidden:
 
 start/index
-about/index
 ```
 
 # 索引与表格

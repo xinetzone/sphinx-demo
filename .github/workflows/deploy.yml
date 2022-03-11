@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [dev]
+    branches: [main]
 
 jobs:
   deploy-to-pages:
@@ -47,11 +47,10 @@ jobs:
 
       - name: 🔧 Build HTML
         run: |
-          invoke docs
-          invoke docs -l en
+          invoke write
 
       - name: 🚀 Deploy to GitHub pages
         uses: peaceiris/actions-gh-pages@v3.6.1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: output/html
+          publish_dir: output/html/write
