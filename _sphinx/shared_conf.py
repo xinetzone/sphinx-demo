@@ -37,7 +37,6 @@ release = '0.1'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    "sphinx_book_theme",
     "ablog",
     "myst_nb",
     "sphinx.ext.extlinks",
@@ -46,6 +45,12 @@ extensions = [
     "sphinx_copybutton",
     "sphinx_comments",
     "sphinxcontrib.mermaid",
+    "sphinxcontrib.bibtex",
+    'sphinx.ext.autosummary',
+    'sphinx.ext.todo',
+    'sphinx.ext.coverage',
+    'sphinx.ext.viewcode',
+    'sphinx.ext.autosectionlabel',
     'sphinx.ext.napoleon',
     # "sphinx.ext.todo",
     # "sphinxcontrib.bibtex",
