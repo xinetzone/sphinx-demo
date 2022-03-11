@@ -78,12 +78,12 @@ var addUtterances = () => {
 commentsRunWhenDOMLoaded(addUtterances);
 </script>
     <script src="../_static/translations.js"></script>
-    <script src="../_static/sphinx-book-theme.9d8b4a8b9bb19db25eeaddc40d639ba2.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.9d8b4a8b9bb19db25eeaddc40d639ba2.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".cell"
-const thebe_selector_input = ".cell_input div.highlight"
-const thebe_selector_output = ".cell_output"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
@@ -226,17 +226,17 @@ const thebe_selector_output = ".cell_output"
   <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../CODE_OF_CONDUCT.html">
-     Covenant Code of Conduct
+     行为准则
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../CONTRIBUTING.html">
-     Contributing
+     贡献
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../SECURITY.html">
-     Security Policy
+     安全策略
     </a>
    </li>
    <li class="toctree-l2">
@@ -453,13 +453,13 @@ const thebe_selector_output = ".cell_output"
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>pip install sphinx-sitemap
 </pre></div>
 </div>
-<p>添加到 <a class="reference external" href="https://daobook.github.io/sphinx/usage/configuration.html#confval-extensions" title="(在 Sphinx v4.4.0+)"><code class="xref std std-confval docutils literal notranslate"><span class="pre">extensions</span></code></a>：</p>
+<p>添加到 <code class="xref std std-confval docutils literal notranslate"><span class="pre">extensions</span></code>：</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="nv">extensions</span> <span class="o">=</span> <span class="o">[</span><span class="s1">&#39;sphinx_sitemap&#39;</span><span class="o">]</span>
 </pre></div>
 </div>
 <div class="section" id="id3">
 <h3>基础配置<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h3>
-<p>在你的 Sphinx <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> 中设置 <a class="reference external" href="https://daobook.github.io/sphinx/usage/configuration.html#confval-html_baseurl" title="(在 Sphinx v4.4.0+)"><code class="xref std std-confval docutils literal notranslate"><span class="pre">html_baseurl</span></code></a> 的值为当前文档的 base URL。比如说：</p>
+<p>在你的 Sphinx <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> 中设置 <code class="xref std std-confval docutils literal notranslate"><span class="pre">html_baseurl</span></code> 的值为当前文档的 base URL。比如说：</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="nv">html_baseurl</span> <span class="o">=</span> <span class="s1">&#39;https://my-site.com/docs/&#39;</span>
 </pre></div>
 </div>
@@ -482,7 +482,7 @@ const thebe_selector_output = ".cell_output"
 <div class="section" id="id5">
 <h3>版本配置<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h3>
 <p>对于多版本网站地图，需要为每个版本生成一个网站地图，然后手动将其位置添加到 <a class="reference external" href="https://support.google.com/webmasters/answer/75712?hl=en">网站地图索引文件</a> 中。</p>
-<p>该扩展将查看当前正在构建的版本的 <a class="reference external" href="https://daobook.github.io/sphinx/usage/configuration.html#confval-version" title="(在 Sphinx v4.4.0+)"><code class="xref std std-confval docutils literal notranslate"><span class="pre">version</span></code></a> 配置值，所以要确保该值被设置。</p>
+<p>该扩展将查看当前正在构建的版本的 <code class="xref std std-confval docutils literal notranslate"><span class="pre">version</span></code> 配置值，所以要确保该值被设置。</p>
 <div class="admonition hint">
 <p class="admonition-title">提示</p>
 <p>当使用多个版本时，最好的做法是将所有版本的主题布局中的 canonical URL 设置为该页面的最新版本：</p>
@@ -494,7 +494,7 @@ const thebe_selector_output = ".cell_output"
 <div class="section" id="id6">
 <h3>多语言配置<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h3>
 <p>对于多语言网站地图，每一种语言/地区生成一个网站地图，然后手动将其位置添加到网站地图索引文件中。</p>
-<p>主语言是由 <a class="reference external" href="https://daobook.github.io/sphinx/usage/configuration.html#confval-language" title="(在 Sphinx v4.4.0+)"><code class="xref std std-confval docutils literal notranslate"><span class="pre">language</span></code></a> 配置值设置的。替代语言是由 <code class="docutils literal notranslate"><span class="pre">sitemap_locales</span></code> 选项手动设置的，或者由扩展的 <a class="reference external" href="https://daobook.github.io/sphinx/usage/configuration.html#confval-locale_dirs" title="(在 Sphinx v4.4.0+)"><code class="xref std std-confval docutils literal notranslate"><span class="pre">locale_dirs</span></code></a> 配置值自动检测的，所以要确保其中一个被设置。</p>
+<p>主语言是由 <code class="xref std std-confval docutils literal notranslate"><span class="pre">language</span></code> 配置值设置的。替代语言是由 <code class="docutils literal notranslate"><span class="pre">sitemap_locales</span></code> 选项手动设置的，或者由扩展的 <code class="xref std std-confval docutils literal notranslate"><span class="pre">locale_dirs</span></code> 配置值自动检测的，所以要确保其中一个被设置。</p>
 <p><code class="docutils literal notranslate"><span class="pre">sitemap_locales</span></code> 配置是指定一个在 <code class="docutils literal notranslate"><span class="pre">sitemap</span></code> 中包含的 <code class="docutils literal notranslate"><span class="pre">locales</span></code> 的列表。例如，如果一个第三方扩展添加不支持的语言到 <code class="docutils literal notranslate"><span class="pre">locale_dirs</span></code>，或者允许 <code class="docutils literal notranslate"><span class="pre">locale</span></code> 达到一定的翻译百分比后再公开。例如，如果主要语言是 <code class="docutils literal notranslate"><span class="pre">zh_CN</span></code>，并且指定了 <code class="docutils literal notranslate"><span class="pre">en</span></code> 和 <code class="docutils literal notranslate"><span class="pre">fr</span></code> 的翻译列表，那么 <code class="docutils literal notranslate"><span class="pre">sitemap</span></code> 看起来是这样的：</p>
 <div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span>
   <span class="nt">&lt;urlset</span> <span class="na">xmlns:xhtml=</span><span class="s">&quot;http://www.w3.org/1999/xhtml&quot;</span> <span class="na">xmlns=</span><span class="s">&quot;http://www.sitemaps.org/schemas/sitemap/0.9&quot;</span><span class="nt">&gt;</span>
@@ -550,7 +550,7 @@ const thebe_selector_output = ".cell_output"
 </div>
 <div class="section" id="url">
 <h3>定制 URL 方案<a class="headerlink" href="#url" title="永久链接至标题">¶</a></h3>
-<p>如果同时设置了 <a class="reference external" href="https://daobook.github.io/sphinx/usage/configuration.html#confval-language" title="(在 Sphinx v4.4.0+)"><code class="xref std std-confval docutils literal notranslate"><span class="pre">language</span></code></a> 和 <a class="reference external" href="https://daobook.github.io/sphinx/usage/configuration.html#confval-version" title="(在 Sphinx v4.4.0+)"><code class="xref std std-confval docutils literal notranslate"><span class="pre">version</span></code></a>，默认的 <code class="docutils literal notranslate"><span class="pre">URL</span></code> 格式是 <code class="docutils literal notranslate"><span class="pre">{version}{lang}{link}</span></code>。要改变默认行为，请在 <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> 中设置 <code class="xref std std-confval docutils literal notranslate"><span class="pre">sitemap_url_scheme</span></code> 的值为所需格式。比如说：</p>
+<p>如果同时设置了 <code class="xref std std-confval docutils literal notranslate"><span class="pre">language</span></code> 和 <code class="xref std std-confval docutils literal notranslate"><span class="pre">version</span></code>，默认的 <code class="docutils literal notranslate"><span class="pre">URL</span></code> 格式是 <code class="docutils literal notranslate"><span class="pre">{version}{lang}{link}</span></code>。要改变默认行为，请在 <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> 中设置 <code class="xref std std-confval docutils literal notranslate"><span class="pre">sitemap_url_scheme</span></code> 的值为所需格式。比如说：</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">sitemap_url_scheme</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">{lang}{version}</span><span class="s2">subdir/</span><span class="si">{link}</span><span class="s2">&quot;</span>
 </pre></div>
 </div>
@@ -569,7 +569,7 @@ const thebe_selector_output = ".cell_output"
 <span class="n">Sitemap</span><span class="p">:</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">my</span><span class="o">-</span><span class="n">site</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">docs</span><span class="o">/</span><span class="n">sitemap</span><span class="o">.</span><span class="n">xml</span>
 </pre></div>
 </div>
-<p>然后，将 <code class="docutils literal notranslate"><span class="pre">robots.txt</span></code> 添加到 <a class="reference external" href="https://daobook.github.io/sphinx/usage/configuration.html#confval-html_extra_path" title="(在 Sphinx v4.4.0+)"><code class="xref std std-confval docutils literal notranslate"><span class="pre">html_extra_path</span></code></a> 配置值中：</p>
+<p>然后，将 <code class="docutils literal notranslate"><span class="pre">robots.txt</span></code> 添加到 <code class="xref std std-confval docutils literal notranslate"><span class="pre">html_extra_path</span></code> 配置值中：</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_extra_path</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;robots.txt&#39;</span><span class="p">]</span>
 </pre></div>
 </div>
@@ -641,33 +641,5 @@ const thebe_selector_output = ".cell_output"
   
   <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
 
-    <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
-      <span class="rst-current-version" data-toggle="rst-current-version">
-        <span class="fa fa-book"> Read the Docs</span>
-        v: latest
-        <span class="fa fa-caret-down"></span>
-      </span>
-      <div class="rst-other-versions">
-        <dl>
-          <dt>Versions</dt>
-            <dd><a href="/latest">latest</a></dd>
-            <dd><a href="/translation">translation</a></dd>
-        </dl>
-        <dl>
-          <dt>Locale</dt>
-          <dd><a href="/">en</a></dd>
-            <dd><a href="/zh_CN">zh_CN</a></dd>
-        </dl>
-        <dl>
-          <dt>On Read the Docs</dt>
-            <dd>
-              <a href="#">Project Home</a>
-            </dd>
-            <dd>
-              <a href="#">Builds</a>
-            </dd>
-        </dl>
-      </div>
-    </div>
   </body>
 </html>
